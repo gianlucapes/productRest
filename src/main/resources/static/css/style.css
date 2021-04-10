@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.name_field,.brand_field,.madein_field,.price_field,#save
+{
+    margin:25px;
+	width:25%;
+}
+.title{
+	text-align:center;
+}
+.form_div
+{
+	margin-top:50px;
+	position:relative;
+	left:450px;
+	
+}

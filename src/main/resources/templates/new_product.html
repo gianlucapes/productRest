@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<title>Create New Product</title>
+</head>
+<body>
+<h1 class="title">Create New Product</h1>
+<div class="form_div">
+<form action="#" th:action="@{/save}" th:object="${product}" method="post">
+<div class="name_field">
+<label for="name">Name:</label>
+<input name="name" class="form-control" type="text" placeholder="name" aria-label="default input example" th:field="*{name}">
+</div>
+<div class="brand_field">
+<label for="brand">Brand:</label>
+<input name="brand" class="form-control" type="text" placeholder="brand" aria-label="default input example" th:field="*{brand}">
+</div>
+<div class="madein_field">
+<label for="madein">Made in:</label>
+<input name="madein" class="form-control" type="text" placeholder="made in" aria-label="default input example" th:field="*{madein}">
+</div>
+<div class="price_field ">
+<label for="price">Price:</label>
+<input name="price" class="form-control" type="text" placeholder="price" aria-label="default input example" th:field="*{price}">
+</div>
+<button type="submit" class="btn btn-primary" id="save">Save</button>
+</form>
+</div>
+</body>
+</html>
